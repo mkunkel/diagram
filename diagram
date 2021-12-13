@@ -1,0 +1,24 @@
+#! /usr/bin/env ruby
+
+# Related GH issue: https://github.com/bundler/bundler/issues/5847
+ENV['BUNDLE_BIN'] = nil
+require 'bundler/inline'
+
+gemfile(true) do
+  source 'https://rubygems.org'
+
+  gem 'slim'
+end
+
+require 'yaml'
+
+def generate
+  output = Slim::Template.new('index.slim').render data: data
+  File.write('output.html', output)
+end
+
+def data
+  YAML.load_file('infrastructure.yml')
+end
+
+generate

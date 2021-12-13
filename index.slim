@@ -1,0 +1,7 @@
+html
+  head
+    style
+      == Slim::Template.new('index.slim.css').render(nil, 'legend' => data['legend'])
+  body
+    - data['rows'].each do |row|
+      == Slim::Template.new('row.slim').render(nil, 'row' => row)

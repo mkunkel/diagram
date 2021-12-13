@@ -1,0 +1,71 @@
+<html><head><style>.container.ec2 { border: 2px solid #e1d5e7; }.container>.items>.item.ec2 { border: 2px solid #e1d5e7; background-color: #e1d5e7; }.container>.title.ec2 { border: 2px solid #e1d5e7; background-color: #e1d5e7; }.container.kubernetes { border: 2px solid #dae8fc; }.container>.items>.item.kubernetes { border: 2px solid #dae8fc; background-color: #dae8fc; }.container>.title.kubernetes { border: 2px solid #dae8fc; background-color: #dae8fc; }.container.persistence { border: 2px solid #d5e8d4; }.container>.items>.item.persistence { border: 2px solid #d5e8d4; background-color: #d5e8d4; }.container>.title.persistence { border: 2px solid #d5e8d4; background-color: #d5e8d4; }.container.EOL { border: 2px solid #f8cecc; }.container>.items>.item.EOL { border: 2px solid #f8cecc; background-color: #f8cecc; }.container>.title.EOL { border: 2px solid #f8cecc; background-color: #f8cecc; }.container.migration { border: 2px solid #1ba1e2; }.container>.items>.item.migration { border: 2px solid #1ba1e2; background-color: #1ba1e2; }.container>.title.migration { border: 2px solid #1ba1e2; background-color: #1ba1e2; }.container.experiment { border: 2px solid #aa00ff; }.container>.items>.item.experiment { border: 2px solid #aa00ff; background-color: #aa00ff; }.container>.title.experiment { border: 2px solid #aa00ff; background-color: #aa00ff; }.container.infrastructure { border: 2px solid #ffe6cc; }.container>.items>.item.infrastructure { border: 2px solid #ffe6cc; background-color: #ffe6cc; }.container>.title.infrastructure { border: 2px solid #ffe6cc; background-color: #ffe6cc; }.container.other { border: 2px solid #c1c1c1; }.container>.items>.item.other { border: 2px solid #c1c1c1; background-color: #c1c1c1; }.container>.title.other { border: 2px solid #c1c1c1; background-color: #c1c1c1; }body {
+  font-size: 14px;
+}
+
+.row {
+  border: 1px solid #000;
+  width: 1100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.row>.title {
+  float: left;
+  border: 1px solid #000;
+  vertical-align: middle;
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  /* position: relative; */
+  height: auto;
+}
+
+.row>.title>.text {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  flex-direction: column;
+  width: 25px;
+}
+
+.row>.title>.text>span {
+  transform: translateY(100px) rotate(-90deg);
+  -webkit-transform: translateY(100px) rotate(90deg);
+  display: block;
+  width: 200px;
+}
+
+.row>.container {
+  float: left;
+  max-width: 1030px;
+}
+
+.row .container>.title {
+  text-align: center;
+}
+
+.container {
+  float: left;
+  margin: 12px;
+  display: inline;
+  border-radius: 5px;
+}
+
+.container>.items {
+  padding: 2px;
+}
+
+.container>.items>.item {
+  float: left;
+  margin: 2px;
+  padding: 2px;
+  width: 175px;
+  border-radius: 5px;
+}
+
+.clearfix {
+  float: none;
+  clear: both
+}</style></head><body><div class="row"><div class="title"><div class="text"><span>Application Services</span></div></div><div class="container"><div class="container ec2"><div class="title ec2"><span>EC2</span></div><div class="items"><div class="item ec2"><span>atlas</span></div><div class="item migration"><span>bert</span></div><div class="item ec2"><span>community-sidekiq</span></div><div class="item ec2"><span>drupal-cms-23-image-copy</span></div><div class="item EOL"><span>gonzo</span></div><div class="item ec2"><span>gustavo</span></div><div class="item ec2"><span>job-shop</span></div><div class="item ec2"><span>luna</span></div><div class="item ec2"><span>marketing</span></div><div class="item EOL"><span>microsites</span></div><div class="item EOL"><span>rizzo</span></div><div class="item ec2"><span>saucelabs</span></div><div class="item infrastructure"><span>openvpn</span></div><div class="item infrastructure"><span>nagios</span></div><div class="item infrastructure"><span>fluentd</span></div><div class="item infrastructure"><span>jenkins</span></div><div class="item infrastructure"><span>chef-tooling</span></div><div class="item infrastructure"><span>kibana</span></div><div class="item infrastructure"><span>logstash</span></div><div class="item infrastructure"><span>dispatch</span></div><div class="item infrastructure"><span>okta</span></div><div class="container kubernetes"><div class="title kubernetes"><span>Kubernetes</span></div><div class="items"><div class="item kubernetes"><span>campaign-cms</span></div><div class="item kubernetes"><span>community</span></div><div class="item kubernetes"><span>connect2id</span></div><div class="item kubernetes"><span>copilot</span></div><div class="item kubernetes"><span>dotcom-amp</span></div><div class="item kubernetes"><span>dotcom-connect</span></div><div class="item kubernetes"><span>dotcom-flights</span></div><div class="item kubernetes"><span>dotcom-frontend</span></div><div class="item EOL"><span>dotcom-pois</span></div><div class="item kubernetes"><span>dotcom-profile</span></div><div class="item kubernetes"><span>dotcom-video</span></div><div class="item kubernetes"><span>dotcom-sitemaps</span></div><div class="item kubernetes"><span>dotcom-web</span></div><div class="item kubernetes"><span>global-ui</span></div><div class="item kubernetes"><span>gonzo</span></div><div class="item kubernetes"><span>gor-relay</span></div><div class="item kubernetes"><span>k8s-postfix</span></div><div class="item kubernetes"><span>merch-backend</span></div><div class="item EOL"><span>redirector</span></div><div class="item kubernetes"><span>salesforce-proxy</span></div><div class="item kubernetes"><span>screencapture</span></div><div class="item kubernetes"><span>subscription-manager</span></div><div class="item kubernetes"><span>trips-web</span></div><div class="item infrastructure"><span>fluentd</span></div><div class="item infrastructure"><span>grafana</span></div><div class="item infrastructure"><span>prometheus</span></div><div class="item infrastructure"><span>vector</span></div><div class="clearfix"></div></div><div class="clearfix"></div></div><div class="clearfix"></div></div><div class="clearfix"></div></div><div class="container other"><div class="title other"><span>WPEngine</span></div><div class="items"><div class="item other"><span>wp-magazine</span></div><div class="clearfix"></div></div><div class="clearfix"></div></div><div class="container other"><div class="title other"><span>Weblinc</span></div><div class="items"><div class="item other"><span>shop</span></div><div class="clearfix"></div></div><div class="clearfix"></div></div><div class="container other"><div class="title other"><span>S3</span></div><div class="items"><div class="item other"><span>static-sites</span></div><div class="item other"><span>legacy-destinations</span></div><div class="clearfix"></div></div><div class="clearfix"></div></div></div><div class="clearfix"></div></div><div class="row"><div class="title"><div class="text"><span>Open Planet Services</span></div></div><div class="container"><div class="container kubernetes"><div class="title kubernetes"><span>Kubernetes</span></div><div class="items"><div class="item kubernetes"><span>op-activities-rework</span></div><div class="item kubernetes"><span>op-annotate</span></div><div class="item kubernetes"><span>op-atlas</span></div><div class="item kubernetes"><span>op-backstage</span></div><div class="item kubernetes"><span>op-backstage-frontend</span></div><div class="item kubernetes"><span>op-bookmarks</span></div><div class="item kubernetes"><span>op-documentation</span></div><div class="item kubernetes"><span>op-graphql</span></div><div class="item kubernetes"><span>op-images</span></div><div class="item kubernetes"><span>op-include</span></div><div class="item kubernetes"><span>op-lodgings</span></div><div class="item kubernetes"><span>op-profiles</span></div><div class="item kubernetes"><span>op-profiles-admin</span></div><div class="item kubernetes"><span>op-schema-tester</span></div><div class="item kubernetes"><span>op-search</span></div><div class="item kubernetes"><span>op-shop</span></div><div class="item kubernetes"><span>op-slugs</span></div><div class="item kubernetes"><span>op-tags-rework</span></div><div class="item kubernetes"><span>op-video</span></div><div class="item infrastructure"><span>kong-api</span></div><div class="item infrastructure"><span>op-nginx-internal</span></div><div class="item infrastructure"><span>open-planet-nginx</span></div><div class="container kubernetes"><div class="title kubernetes"><span>Sync Services</span></div><div class="items"><div class="item kubernetes"><span>op-activities-rework-sync</span></div><div class="item kubernetes"><span>op-shop-sync</span></div><div class="item kubernetes"><span>op-lodgings-sync</span></div><div class="item kubernetes"><span>op-atlas-sync</span></div><div class="item kubernetes"><span>op-annotate-sync</span></div><div class="item kubernetes"><span>op-search-sync</span></div><div class="item kubernetes"><span>op-video-sync</span></div><div class="clearfix"></div></div><div class="clearfix"></div></div><div class="clearfix"></div></div><div class="clearfix"></div></div></div><div class="clearfix"></div></div><div class="row"><div class="title"><div class="text"><span>Persistence Layer</span></div></div><div class="container"><div class="container persistence"><div class="title persistence"><span>RDS Postgres</span></div><div class="items"><div class="item persistence"><span>community</span></div><div class="item EOL"><span>open-planet-community</span></div><div class="item persistence"><span>connect2id</span></div><div class="item experiment"><span>contact-us</span></div><div class="item persistence"><span>copilot</span></div><div class="item persistence"><span>dotcom-connect</span></div><div class="item persistence"><span>drupal-metrics</span></div><div class="item persistence"><span>gustavo</span></div><div class="item persistence"><span>kong-api-gateway</span></div><div class="item persistence"><span>luna</span></div><div class="item persistence"><span>marketing-analytics-tooling</span></div><div class="item persistence"><span>op-backstage</span></div><div class="item persistence"><span>op-bookmarks</span></div><div class="item persistence"><span>op-sitemaps</span></div><div class="item persistence"><span>op-video</span></div><div class="item persistence"><span>open-planet-activities</span></div><div class="item persistence"><span>open-planet-annotate</span></div><div class="item persistence"><span>open-planet-atlas</span></div><div class="item persistence"><span>open-planet-grafana</span></div><div class="item persistence"><span>open-planet-lodgings</span></div><div class="item persistence"><span>open-planet-pois</span></div><div class="item EOL"><span>open-planet-pois-foursquare</span></div><div class="item persistence"><span>open-planet-profiles-admin</span></div><div class="item persistence"><span>open-planet-shop</span></div><div class="item persistence"><span>open-planet-tags</span></div><div class="item persistence"><span>trips</span></div><div class="item experiment"><span>wiki-js</span></div><div class="clearfix"></div></div><div class="clearfix"></div></div><div class="container persistence"><div class="title persistence"><span>RDS MySQL</span></div><div class="items"><div class="item EOL"><span>articles</span></div><div class="item EOL"><span>blog</span></div><div class="item persistence"><span>campaign-cms</span></div><div class="item persistence"><span>merch</span></div><div class="item persistence"><span>vpn-tooling</span></div><div class="clearfix"></div></div><div class="clearfix"></div></div><div class="container persistence"><div class="title persistence"><span>EC2 Elasticsearch</span></div><div class="items"><div class="item EOL"><span>rowlf</span></div><div class="item persistence"><span>logstash</span></div><div class="item persistence"><span>community</span></div><div class="clearfix"></div></div><div class="clearfix"></div></div><div class="container persistence"><div class="title persistence"><span>Redis</span></div><div class="items"><div class="item persistence"><span>community</span></div><div class="item persistence"><span>connect2id</span></div><div class="item persistence"><span>dispatch</span></div><div class="item persistence"><span>logstash</span></div><div class="item persistence"><span>sitemaps</span></div><div class="item EOL"><span>waldorf-utilities</span></div><div class="clearfix"></div></div><div class="clearfix"></div></div><div class="container persistence"><div class="title persistence"><span>Memcached</span></div><div class="items"><div class="item persistence"><span>community-cache</span></div><div class="clearfix"></div></div><div class="clearfix"></div></div></div><div class="clearfix"></div></div></body></html>

@@ -1,0 +1,308 @@
+legend:
+- category: ec2
+  color: '#e1d5e7'
+- category: kubernetes
+  color: '#dae8fc'
+- category: persistence
+  color: '#d5e8d4'
+- category: EOL
+  color: '#f8cecc'
+- category: migration
+  color: '#1ba1e2'
+- category: experiment
+  color: '#aa00ff'
+- category: infrastructure
+  color: '#ffe6cc'
+- category: other
+  color: '#c1c1c1'
+rows:
+- name: Application Services
+  containers:
+  - name: EC2
+    category: ec2
+    items:
+    - name: atlas
+      category: ec2
+    - name: bert
+      category: migration
+    - name: community-sidekiq
+      category: ec2
+    - name: drupal-cms-23-image-copy
+      category: ec2
+    - name: gonzo
+      category: EOL
+    - name: gustavo
+      category: ec2
+    - name: job-shop
+      category: ec2
+    - name: luna
+      category: ec2
+    - name: marketing
+      category: ec2
+    - name: microsites
+      category: EOL
+    - name: rizzo
+      category: EOL
+    - name: saucelabs
+      category: ec2
+    - name: openvpn
+      category: infrastructure
+    - name: nagios
+      category: infrastructure
+    - name: fluentd
+      category: infrastructure
+    - name: jenkins
+      category: infrastructure
+    - name: chef-tooling
+      category: infrastructure
+    - name: kibana
+      category: infrastructure
+    - name: logstash
+      category: infrastructure
+    - name: dispatch
+      category: infrastructure
+    - name: okta
+      category: infrastructure
+    containers:
+    - name: Kubernetes
+      category: kubernetes
+      items:
+      - name: campaign-cms
+        category: kubernetes
+      - name: community
+        category: kubernetes
+      - name: connect2id
+        category: kubernetes
+      - name: copilot
+        category: kubernetes
+      - name: dotcom-amp
+        category: kubernetes
+      - name: dotcom-connect
+        category: kubernetes
+      - name: dotcom-flights
+        category: kubernetes
+      - name: dotcom-frontend
+        category: kubernetes
+      - name: dotcom-pois
+        category: EOL
+      - name: dotcom-profile
+        category: kubernetes
+      - name: dotcom-video
+        category: kubernetes
+      - name: dotcom-sitemaps
+        category: kubernetes
+      - name: dotcom-web
+        category: kubernetes
+      - name: global-ui
+        category: kubernetes
+      - name: gonzo
+        category: kubernetes
+      - name: gor-relay
+        category: kubernetes
+      - name: k8s-postfix
+        category: kubernetes
+      - name: merch-backend
+        category: kubernetes
+      - name: redirector
+        category: EOL
+      - name: salesforce-proxy
+        category: kubernetes
+      - name: screencapture
+        category: kubernetes
+      - name: subscription-manager
+        category: kubernetes
+      - name: trips-web
+        category: kubernetes
+      - name: fluentd
+        category: infrastructure
+      - name: grafana
+        category: infrastructure
+      - name: prometheus
+        category: infrastructure
+      - name: vector
+        category: infrastructure
+  - name: WPEngine
+    category: other
+    items:
+    - name: wp-magazine
+      category: other
+  - name: Weblinc
+    category: other
+    items:
+    - name: shop
+      category: other
+  - name: S3
+    category: other
+    items:
+    - name: static-sites
+      category: other
+    - name: legacy-destinations
+      category: other
+- name: Open Planet Services
+  containers:
+  - name: Kubernetes
+    category: kubernetes
+    items:
+    - name: op-activities-rework
+      category: kubernetes
+    - name: op-annotate
+      category: kubernetes
+    - name: op-atlas
+      category: kubernetes
+    - name: op-backstage
+      category: kubernetes
+    - name: op-backstage-frontend
+      category: kubernetes
+    - name: op-bookmarks
+      category: kubernetes
+    - name: op-documentation
+      category: kubernetes
+    - name: op-graphql
+      category: kubernetes
+    - name: op-images
+      category: kubernetes
+    - name: op-include
+      category: kubernetes
+    - name: op-lodgings
+      category: kubernetes
+    - name: op-profiles
+      category: kubernetes
+    - name: op-profiles-admin
+      category: kubernetes
+    - name: op-schema-tester
+      category: kubernetes
+    - name: op-search
+      category: kubernetes
+    - name: op-shop
+      category: kubernetes
+    - name: op-slugs
+      category: kubernetes
+    - name: op-tags-rework
+      category: kubernetes
+    - name: op-video
+      category: kubernetes
+    - name: kong-api
+      category: infrastructure
+    - name: op-nginx-internal
+      category: infrastructure
+    - name: open-planet-nginx
+      category: infrastructure
+    containers:
+    - name: Sync Services
+      category: kubernetes
+      items:
+      - name: op-activities-rework-sync
+        category: kubernetes
+      - name: op-shop-sync
+        category: kubernetes
+      - name: op-lodgings-sync
+        category: kubernetes
+      - name: op-atlas-sync
+        category: kubernetes
+      - name: op-annotate-sync
+        category: kubernetes
+      - name: op-search-sync
+        category: kubernetes
+      - name: op-video-sync
+        category: kubernetes
+- name: Persistence Layer
+  containers:
+  - name: RDS Postgres
+    category: persistence
+    items:
+    - name: community
+      category: persistence
+    - name: open-planet-community
+      category: EOL
+    - name: connect2id
+      category: persistence
+    - name: contact-us
+      category: experiment
+    - name: copilot
+      category: persistence
+    - name: dotcom-connect
+      category: persistence
+    - name: drupal-metrics
+      category: persistence
+    - name: gustavo
+      category: persistence
+    - name: kong-api-gateway
+      category: persistence
+    - name: luna
+      category: persistence
+    - name: marketing-analytics-tooling
+      category: persistence
+    - name: op-backstage
+      category: persistence
+    - name: op-bookmarks
+      category: persistence
+    - name: op-sitemaps
+      category: persistence
+    - name: op-video
+      category: persistence
+    - name: open-planet-activities
+      category: persistence
+    - name: open-planet-annotate
+      category: persistence
+    - name: open-planet-atlas
+      category: persistence
+    - name: open-planet-grafana
+      category: persistence
+    - name: open-planet-lodgings
+      category: persistence
+    - name: open-planet-pois
+      category: persistence
+    - name: open-planet-pois-foursquare
+      category: EOL
+    - name: open-planet-profiles-admin
+      category: persistence
+    - name: open-planet-shop
+      category: persistence
+    - name: open-planet-tags
+      category: persistence
+    - name: trips
+      category: persistence
+    - name: wiki-js
+      category: experiment
+  - name: RDS MySQL
+    category: persistence
+    items:
+    - name: articles
+      category: EOL
+    - name: blog
+      category: EOL
+    - name: campaign-cms
+      category: persistence
+    - name: merch
+      category: persistence
+    - name: vpn-tooling
+      category: persistence
+  - name: EC2 Elasticsearch
+    category: persistence
+    items:
+    - name: rowlf
+      category: EOL
+    - name: logstash
+      category: persistence
+    - name: community
+      category: persistence
+  - name: Redis
+    category: persistence
+    items:
+    - name: community
+      category: persistence
+    - name: connect2id
+      category: persistence
+    - name: dispatch
+      category: persistence
+    - name: logstash
+      category: persistence
+    - name: sitemaps
+      category: persistence
+    - name: waldorf-utilities
+      category: EOL
+  - name: Memcached
+    category: persistence
+    items:
+    - name: community-cache
+      category: persistence

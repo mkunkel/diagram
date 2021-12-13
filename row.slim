@@ -1,0 +1,8 @@
+.row
+  .title
+    .text
+      span = locals['row']['name']
+  .container 
+    - locals['row']['containers'].each do |container|
+      == Slim::Template.new('container.slim').render(nil, 'container' => container)
+  .clearfix

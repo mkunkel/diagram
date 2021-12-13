@@ -1,0 +1,13 @@
+.container class=locals['container']['category']
+  .title class=locals['container']['category']
+    span = locals['container']['name']
+  .items
+    - locals['container']['items'].each do |item|
+      .item class=item['category']
+        span = item['name']
+
+    - if locals['container']['containers'] 
+      - locals['container']['containers'].each do |container|
+        == Slim::Template.new('container.slim').render(nil, 'container' => container)
+    .clearfix
+  .clearfix
